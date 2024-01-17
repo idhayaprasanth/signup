@@ -28,26 +28,14 @@
                 <span id="password-error" class="error-message"></span>
             <button type="submit">Sign up</button>
         </form>
-        <P>or</P>
-        <center>
-        <div class="g-signin2" data-onsuccess="onSignup" ></div></center>
-
+       
         </div>
     
    
     <script>
-         function onSignIn(googleUser) {
-      // Handle the sign-in logic here
-      var profile = googleUser.getBasicProfile();
-      console.log('ID: ' + profile.getId());
-      console.log('Name: ' + profile.getName());
-      console.log('Email: ' + profile.getEmail());
-      // You can perform further actions or send this data to your server
-      // For example, you can send this data to Auth0 for authentication
-      // More code to integrate with Auth0 should be added here
-    }
+         
 
-         function togglePassword(inputId) {
+    function togglePassword(inputId) {
       const passwordInput = document.getElementById(inputId);
       const icon = passwordInput.nextElementSibling; // Get the icon next to the input
       if (passwordInput.type === "password") {
